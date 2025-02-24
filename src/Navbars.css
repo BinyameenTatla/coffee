@@ -1,0 +1,57 @@
+/* Base Active State */
+.active {
+    color: rgb(234, 29, 14); /* Bold color for emphasis */
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-weight: 600; /* Slightly bolder text */
+    text-decoration: none; /* Remove underline if any */
+}
+
+/* Hover Effects */
+.active:hover {
+    transform: scale(1.05); /* Slightly larger on hover for emphasis */
+    box-shadow: 0px 4px 10px rgba(234, 29, 14, 0.4); /* Soft glowing shadow */
+    color: #fcfdff; /* Change text color to a softer light */
+    background-color: rgba(234, 29, 14, 0.1); /* Subtle background change */
+    padding: 2px 4px; /* Add a bit of padding to create a 'pressed' look */
+    border-radius: 6px; /* Slightly rounded corners for a softer feel */
+    transition: all 0.3s ease-out; /* Smooth transition for all properties */
+}
+
+/* Optional: Active state (when element is selected or clicked) */
+.active:active {
+    transform: scale(0.98); /* Slight shrink effect when clicked */
+    color: #fff; /* Ensure text is visible during click */
+    background-color: rgba(234, 29, 14, 0.2); /* Darker background on click */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .active {
+        font-size: 1rem; /* Reduce font size for better fit on smaller screens */
+    }
+
+    .active:hover {
+        transform: scale(1.03); /* Slightly smaller hover effect on mobile */
+        padding: 2px 3px; /* Adjust padding for smaller devices */
+    }
+
+    .active:active {
+        transform: scale(0.96); /* Adjust the shrink effect on click */
+    }
+}
+
+/* Responsive Design for Smaller Mobile Devices */
+@media (max-width: 480px) {
+    .active {
+        font-size: 0.9rem; /* Further reduce font size for very small screens */
+    }
+
+    .active:hover {
+        transform: scale(1.02); /* Even smaller hover effect on very small screens */
+        padding: 2px 2px; /* Adjust padding further */
+    }
+
+    .active:active {
+        transform: scale(0.95); /* Adjust the shrink effect on very small screens */
+    }
+}

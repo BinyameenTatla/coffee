@@ -1,0 +1,160 @@
+/* General Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjusted for better spacing between cards */
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Card Styling */
+.card {
+    width: 250px; /* Adjusted width for a better, more compact card */
+    overflow: hidden;
+    border-radius: 15px; /* Rounded corners for the cards */
+    background-color: #f1f1f1; /* Light background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    transform: translateY(-5px); /* Card lifts slightly on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Image Styling for Cards */
+.img {
+    height: 70px; /* Smaller image size */
+    border-radius: 50%; /* Circular images */
+    width: 70px; /* Adjusted width for smaller image */
+    object-fit: cover; /* Ensures the image fits perfectly within the circle */
+    margin: 10px auto;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Image */
+.img:hover {
+    transform: scale(1.1); /* Image zooms slightly on hover */
+}
+
+/* Header (H4) Styling inside Cards */
+.h4 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600; /* Bold header */
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Centering Heading */
+.head {
+    margin-left: 36%;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    flex-wrap: wrap;
+    padding: 10px;
+    transition: all 0.4s ease-out;
+}
+
+/* Hover Effect on Card Section */
+.cards:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+    color: black;
+}
+
+/* Styling for Image in Card (Main Image) */
+.cardss {
+    width: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Image Styling for Cards */
+.img2 {
+    width: 100%; /* Ensures the image takes full width of the card */
+    height: 180px; /* Adjusted to give a smaller image with a more compact look */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Button Styling */
+.pp {
+    margin-left: 50%;
+    display: flex;
+    margin-top: -10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-weight: 700;
+    padding: 1px 21px;
+    border-radius: 30px; /* Rounded corners for the button */
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    transform: translateX(-50%); /* Center the button */
+}
+.oo{
+    font-weight: bold;
+}
+
+/* Hover Effect on Button */
+.pp:hover {
+    transform: scale(1.05); /* Slightly enlarges the button */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(249, 8, 8); /* Changes button color on hover */
+}
+.pp{
+    height: 23px;
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+    /* Adjust card container layout for smaller screens */
+    .card-container {
+        gap: 20px;
+    }
+
+    /* Center and adjust the size of the cards */
+    .card {
+        width: 90%; /* Make cards take up more space */
+        margin: 10px;
+    }
+
+    /* Adjust button size on smaller screens */
+    .pp {
+        width: 37%;
+        height: 6%;
+        margin-left: 26%;
+    }
+
+    /* Adjust image size inside cards */
+    .img, .img2 {
+        width: 100%; /* Make image responsive */
+        height: auto;
+    }
+
+    /* Adjust margin and text sizes */
+    .h4, .oo {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* Increase padding and gap for mobile view */
+    .cards {
+        gap: 20px;
+    }
+    .head {
+        margin-left: 26%;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+}

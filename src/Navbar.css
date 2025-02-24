@@ -1,0 +1,136 @@
+/* General navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%; /* Ensure the navbar takes full width */
+    color: #f2f2f9;
+    background-color: rgb(20, 22, 22);
+    padding: 0 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+  }
+  
+  /* Navbar Header (Logo Section) */
+  h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+    cursor: pointer;
+  }
+  
+  h1 svg {
+    font-size: 2.4rem;
+    color: #fff;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  h1:hover svg {
+    color: #3498db; /* Change icon color on hover */
+  }
+  
+  /* Navbar Links Container */
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    cursor: pointer;
+    margin: 0;
+    padding: 0; /* Reset padding to avoid overflow */
+    width: 100%;
+  }
+  
+  /* Navbar Link Styling */
+  .nvai {
+    color: #f2f2f9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .nvai:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  /* Icons for Home and Hamburger */
+  .font {
+    font-size: 2.2rem;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .font:hover {
+    color: #3498db;
+  }
+  
+  .fonts {
+    font-size: 2.5rem;
+    color: #fff;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .fonts:hover {
+    color: #3498db;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    /* Hide the menu by default on mobile */
+    ul {
+      display: none; /* Hide navbar items */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%; /* Make the menu full-width */
+      background-color: rgb(20, 22, 22);
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for dropdown */
+      border-top: 2px solid #3498db;
+    }
+  
+    /* Show the menu when it's open */
+    ul.menu-open {
+      display: flex; /* Show navbar items when menu is open */
+    }
+  
+    /* Style the navbar items */
+    ul li {
+      margin: 0;
+      padding: 1rem;
+      text-align: center;
+      width: 100%; /* Ensure each link takes full width */
+    }
+  
+    /* Style for links in mobile */
+    .nvai {
+      font-size: 1.3rem;
+      padding: 12px 20px;
+    }
+  
+    .font {
+      display: none; /* Hide home icon on mobile */
+    }
+  
+    /* Show the hamburger icon */
+    .fonts {
+      display: block;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
