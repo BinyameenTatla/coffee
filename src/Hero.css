@@ -1,38 +1,89 @@
-.body{
+/* Default styles for desktop and larger screens */
+.body {
     width: 100%;
-    height:540px;
-   background-image: url(/cof.jpg);
-   background-size: cover;
-   display: flex;
-   align-items: center;
-   justify-content: end;   
+    height: 540px;
+    background-image: url(/cof.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
-h2{
+
+h2 {
     margin-right: 22%;
     margin-top: -8%;
     color: white;
     font-size: xx-large;
     font-weight: 900;
 }
-hr{
+
+hr {
     width: 81px;
 }
-.p{
-    font-size:small;
+
+.p {
+    font-size: small;
     font-weight: 900;
-    
 }
-.button{
+
+.button {
     background-color: rgb(3, 1, 1);
     color: white;
     height: 25px;
     font-weight: 700;
-    margin-left:35%;
+    margin-left: 35%;
     border: none;
     cursor: pointer;
     transition: all 1s ease-out;
 }
-.button:hover{
+
+.button:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 4px 4px;
-    color: white;}
+    color: white;
+}
+
+/* Media Query for Tablets (screen widths from 600px to 1024px) */
+@media (max-width: 1024px) {
+    .body {
+        height: 400px; /* Adjust height for tablets */
+        justify-content: center; /* Center content on tablets */
+    }
+
+    h2 {
+        margin-right: 10%; /* Adjust h2 position on tablets */
+        font-size: x-large; /* Reduce font size for tablets */
+    }
+
+    .button {
+        margin-left: 20%; /* Adjust button position on tablets */
+        height: 30px; /* Increase button height on tablets */
+    }
+}
+
+/* Media Query for Mobile Devices (screen widths 600px and smaller) */
+@media (max-width: 600px) {
+    .body {
+        height: 300px; /* Reduce height for mobile */
+        justify-content: center; /* Center content on mobile */
+    }
+
+    h2 {
+        margin-right: 0; /* Remove margin for mobile */
+        margin-top: 0; /* Adjust h2 position on mobile */
+        font-size: large; /* Further reduce font size for mobile */
+    }
+
+    hr {
+        width: 50px; /* Adjust hr width for mobile */
+    }
+
+    .p {
+        font-size: x-small; /* Reduce font size for mobile */
+    }
+
+    .button {
+        margin-left: 25%; /* Adjust button position for mobile */
+        height: 35px; /* Adjust button height for mobile */
+    }
+}
