@@ -5,7 +5,7 @@ export const Hero = () => {
         <>
         <div className="body">
             <h2><p>welcome!</p>
-                COFFEE FACTORY 
+               <b className="red"> COFFEE FACTORY</b>
                 <hr></hr>
                 <p className="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br></br> Pariatur quidem incidunt aperiam dicta sint.<br></br></p>
                 <button className="button">Shop Here</button>
