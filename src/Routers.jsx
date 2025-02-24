@@ -2,7 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router'
 import { Coffee } from './Coffee.jsx'
 import { Blogs } from './Blogs.jsx'
 import { Contact } from './Contact.jsx'
-import { Footer } from './Footer.Jsx'
+import { Footer } from './Footer.jsx'
 import { Navbar } from './Navbar.jsx'
 import { Home } from '../Home.jsx'
 
