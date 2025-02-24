@@ -150,7 +150,7 @@
 
     /* Increase padding and gap for mobile view */
     .cards {
-        gap: 20px;
+        gap: 20px
     }
     .head {
         margin-left: 26%;
