@@ -24,6 +24,83 @@
 }
 .ooo{
     font-weight: 400;
-    font-size: x-large;
+    font-size: x-large;/* Default styles for desktop and larger screens */
+    .div {
+        width: 100%;
+        height: 400px;
+        background-color: #000000;
+    }
+    
+    #q {
+        display: flex;
+        padding-top: 9%;
+        padding-left: 70px;
+        color: #fafdff;
+    }
+    
+    .kaa {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        gap: 7%;
+        color: aliceblue;
+    }
+    
+    .kaaa {
+        overflow: hidden;
+        border: 2px solid black;
+    }
+    
+    .ooo {
+        font-weight: 400;
+        font-size: x-large;
+    }
+    
+    /* Media Query for Tablets (screen widths from 600px to 1024px) */
+    @media (max-width: 1024px) {
+        #q {
+            padding-left: 30px; /* Reduced padding for smaller screens */
+            padding-top: 5%;
+        }
+    
+        .kaa {
+            gap: 5%; /* Reduce gap for smaller devices */
+        }
+    
+        .ooo {
+            font-size: large; /* Smaller font size on tablets */
+        }
+    
+        .kaaa {
+            border: 1px solid black; /* Make border thinner on tablets */
+        }
+    }
+    
+    /* Media Query for Mobile Devices (screen widths 600px and smaller) */
+    @media (max-width: 600px) {
+        .div {
+            height: 300px; /* Make the div shorter on small screens */
+        }
+    
+        #q {
+            flex-direction: column; /* Stack the content vertically on mobile */
+            padding-left: 20px;
+            padding-top: 5%;
+        }
+    
+        .kaa {
+            gap: 3%; /* Even smaller gap on mobile */
+            flex-direction: column; /* Stack items vertically on mobile */
+        }
+    
+        .ooo {
+            font-size: medium; /* Reduce font size on mobile */
+        }
+    
+        .kaaa {
+            width: 100%; /* Make the box full width on mobile */
+        }
+    }
+    
 
 }
