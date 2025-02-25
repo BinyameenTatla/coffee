@@ -14,7 +14,7 @@ export const Routers = (() =>{
           children:[
               {
                   path:"/",
-                  element:<Home />
+                  element:<Home/>
              
                   },
                   {
