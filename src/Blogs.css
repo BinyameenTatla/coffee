@@ -42,7 +42,8 @@
 
 /* Button Styling inside Cards */
 .read {
-    margin-left: 120px;
+    margin-left: 4px;
+    padding:  100%;
     background-color: #3498db; /* Blue button for visibility */
     color: white;
     border: none;
@@ -81,14 +82,8 @@
     .Cards {
         width: 90%; /* Full-width cards for mobile */
     }
-
-    .read {
-        margin-left: 123px; /* Center the button on mobile */
-        width: 36%;
+    .hh {
+        margin-left: 31%;
+        font-size: x-large;
     }
-}
-.hh {
-    margin-left: 31%;
-    font-size: x-large;
-    font-weight: 600;
 }
