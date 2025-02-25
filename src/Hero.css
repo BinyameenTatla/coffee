@@ -95,5 +95,5 @@ hr {
 
 /* Red color for specific classes */
 .red {
-    color: #23becc; /* Changed from aqua for better contrast */
+    color: hsl(180, 100%, 100%); /* Changed from aqua for better contrast */
 }
