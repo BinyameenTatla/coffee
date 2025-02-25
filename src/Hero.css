@@ -1,4 +1,8 @@
 /* Default styles for desktop and larger screens */
+* {
+    box-sizing: border-box; /* Ensure padding and border do not affect layout */
+}
+
 .body {
     width: 100%;
     height: 540px;
@@ -15,6 +19,7 @@ h2 {
     color: white;
     font-size: xx-large;
     font-weight: 900;
+    word-wrap: break-word; /* Ensures long words wrap on smaller screens */
 }
 
 hr {
@@ -87,6 +92,8 @@ hr {
         height: 35px; /* Adjust button height for mobile */
     }
 }
-.red{
-    color: aqua;
+
+/* Red color for specific classes */
+.red {
+    color: #23becc; /* Changed from aqua for better contrast */
 }
